@@ -1,0 +1,83 @@
+.w-fit{
+    width: fit-content;
+}
+/* 
+section.sign-in:before
+{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(180deg, #2563EB 0%, #424054 100%);
+    top: -35%;
+    height: 1200px;
+    left: -30%;
+    width: 1200px;
+    border-radius: 55556665654555px;
+
+} */
+div.con
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* div.con:before
+{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(180deg, #2563EB 0%, #424054 50%);
+    top: 75%;
+    height: 900px;
+    left: -15%;
+    width: 600px;
+    border-radius: 55556665654555px;
+
+}
+
+div.con:after
+{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(180deg, #2563EB 0%, #424054 60%);
+    top: 80%;
+    height: 600px;
+    right: -20%;
+    width: 600px;
+    border-radius: 55556665654555px;
+
+} */
+
+section.sign-in {
+  background-image: url("../Signin/Screenshot\ 2025-11-12\ 173351.png");
+  background-size: cover;     /* تخليها تملى العنصر بدون تكرار */
+  background-repeat: no-repeat;
+  background-position: center; /* تتمركز مهما صغر أو كبر العرض */
+}
+
+
+.trans
+{
+    transform: translatex(-15%);
+}
+div.signin-box
+{
+    background-color:  #8d89b1b3;
+    width: 600px;
+    height: fit-content;
+
+}
+
+.h-btn:hover
+{
+    background-color: #15264fc7 !important;
+}
+
+div.enter-id input:focus
+{
+    box-shadow: none;
+}
+
+div.cam-box
+{
+    height: 400px;
+}

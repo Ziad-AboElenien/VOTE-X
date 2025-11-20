@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vote-x</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="../Assets/all.min.css">
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="../Assets/bootstrap.min.css">
+    <!-- link css file -->
+    <link rel="stylesheet" href="./home.css">
+    <!-- media query -->
+    <link rel="stylesheet" href="./mediaquery.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary shadow-sm fixed-top  py-3">
+        <div class="container-fluid container-md">
+            <a class="navbar-brand text-white fs-4 fw-bold" href="#">VOTE-X</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link goto-elections text-white" href="#">Election</a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-link m-0 goto-about text-white">About</p>
+                    </li>
+
+                </ul>
+                <button id="signBtn" class="btn rounded-3 ms-auto bg-white shadow px-3 fs-6 text-primary" type="submit"><i
+                        class="fa-regular fa-user"></i> Sign in</button>
+
+            </div>
+        </div>
+    </nav>
+    <section class="home position-relative pt-5">
+        <div class="container-md pt-5">
+            <div class="my-5 position-relative">
+                <h1 class="display-3 fw-semibold">Your Voice Matters.
+                    <span class="text-primary d-block">Make It Count.</span>
+                </h1>
+                <p class="my-4 fw-semibold w-75 ps-5 fs-5">A secure, transparent, and easy-to-use platform for
+                    all your voting needs. From local
+                    <span class="d-block">elections to organizational decisions, we make voting accessible to
+                        everyone.</span>
+                </p>
+                <div class="w-100 d-flex my-5 justify-content-center gap-3">
+                    <button class="voteBtn bg-primary home-vote-now button2 text-white py-2 shadow px-5">Vote Now</button>
+                    <button class="learnBtn goto-about shadow bg-primary-subtle text-primary btn py-2  px-3">Learn
+                        More</button>
+                </div>
+                <div class="d-flex feture justify-content-center gap-5 fw-semibold my-4">
+                    <span class="fs-4"><i class="fa-regular fs-3 text-success fa-circle-check"></i> Secure</span>
+                    <span class="fs-4"><i class="fa-regular fs-3 text-success fa-circle-check"></i> Transperant</span>
+                    <span class="fs-4"><i class="fa-regular fs-3 text-success fa-circle-check"></i>Accessible</span>
+                </div>
+                <div id="ask" class="form-floating position-absolute">
+                    <div class="btnpriv-wrapper">
+                        <button id="askBtn" class="btnpriv z-2">
+                            <svg class="btnpriv-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z">
+                                </path>
+                            </svg>
+
+                            <div class="txt-wrapper">
+                                <div class="txt-1 fs-5 p-2">
+                                    <span class="btnpriv-letter">A</span>
+                                    <span class="btnpriv-letter">s</span>
+                                    <span class="btnpriv-letter pe-1">k</span>
+                                    <span class="btnpriv-letter">A</span>
+                                    <span class="btnpriv-letter">I</span>
+                                </div>
+                                <div class="txt-2 fs-5 p-2">
+                                    <span class="btnpriv-letter">S</span>
+                                    <span class="btnpriv-letter">u</span>
+                                    <span class="btnpriv-letter">r</span>
+                                    <span class="btnpriv-letter">e</span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="how pt-5">
+                <div class="mt-5">
+                    <h2 class="text-primary-emphasis fs-3">How It Works</h2>
+                    <p class="fs-1 fw-semibold">Simple, Secure Voting in 4 Steps</p>
+                    <p class="w-50 fs-5">Our platform makes participating in democratic processes easy and accessible to
+                        everyone.</p>
+                </div>
+                <div class="row  mt-5">
+                    <div class="item col-sm-12 col-md-6">
+                        <div class="inner rounded-3 p-3 h-auto shadow-sm mb-5 ">
+                            <div class="d-flex gap-3">
+                                <div class="d-flex mb-2 flex-column justify-content-center"><span
+                                        class="p-3 rounded-3 bg-primary ico"><i id="how-icon"
+                                            class="fa-regular fs-3 fa-user"></i></span></div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <p class="fs-4 pb-5 pt-2 fw-semibold d-inline">Sign In<span
+                                            class="position-absolute  fw-normal d-block fs-5">sign in with your national
+                                            id and verify
+                                            your identity</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-sm-12 col-md-6">
+                        <div class="inner rounded-3 p-3 h-auto shadow-sm mb-5 ">
+                            <div class="d-flex gap-3">
+                                <div class="d-flex mb-2 flex-column justify-content-center"><span
+                                        class="p-3 rounded-3 bg-primary ico"><i id="how-icon"
+                                            class="fa-solid fs-3 fa-laptop"></i></span></div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <p class="fs-4 pb-5 pt-2 fw-semibold d-inline">Browse Active Polls<span
+                                            class="position-absolute fw-normal d-block fs-5">Explore current elections
+                                            and polling opportunities.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-sm-12 col-md-6">
+                        <div class="inner rounded-3 p-3 h-auto shadow-sm mb-5 ">
+                            <div class="d-flex gap-3">
+                                <div class="d-flex mb-2 flex-column justify-content-center"><span
+                                        class="p-3 rounded-3 bg-primary ico"><i id="how-icon"
+                                            class="fa-regular fs-3 fa-circle-check"></i></span></div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <p class="fs-4 pb-5 pt-2 fw-semibold d-inline">Cast Your Vote<span
+                                            class="position-absolute fw-normal d-block fs-5">Make your selection
+                                            securely and confidentially.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-sm-12 col-md-6">
+                        <div class="inner rounded-3 p-3 h-auto shadow-sm mb-5 ">
+                            <div class="d-flex gap-3">
+                                <div class="d-flex mb-2 flex-column justify-content-center"><span
+                                        class="p-3 rounded-3 bg-primary ico"><i id="how-icon"
+                                            class="fa-solid fs-3 fa-chart-simple"></i></span></div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <p class="fs-4 pb-5 pt-2 fw-semibold d-inline">View Results<span
+                                            class="position-absolute fw-normal d-block fs-5">See real-time or final
+                                            results after polls close.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="chat-modal d-none shadow bg-white rounded-3 position-fixed z-3 translate-middle top-50 start-50">
+        <div class="d-flex justify-content-between text-white bg-primary rounded-top-3">
+            <p class="pt-3 px-3 fs-5"><i class="fa-solid fa-circle text-success fs-6"></i> VOTE-X Assistant</p>
+            <i class="closeBtn fa-solid fa-close py-3 pe-4 fs-4"></i>
+        </div>
+        <div class="d-flex align-items-baseline gap-3">
+            <span id="chatprof"
+                class="bg-primary-subtle d-inline-block d-flex justify-content-center align-items-center rounded-circle mt-4 ms-4"><i
+                    class="fa-solid text-primary fa-robot"></i></span>
+            <div class="message w-50 py-2  bg-body-secondary rounded-3">
+                <p class="container ps-2 mb-2 pe-1 ">Hi there! I'm VOTE-X AI Assistant. How can I help you with the
+                    voting process today?</p>
+                <span class="ps-2 text-black-50">10:14 Pm</span>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-baseline fixed-bottom  mb-3 px-3 gap-1 w-100">
+            <div class="flex-grow-1">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label class="ps-4 fs-5" for="floatingInput">
+                        Type Your Message... </label>
+                </div>
+            </div>
+            <span class="bg-primary text-white p-3 rounded-3"><i class="fa-regular fs-4 fa-paper-plane"></i></span>
+            <div class="position-absolute bottom-100 mb-3">
+                <p>Sugsseted Questions</p>
+                <div class="d-flex flex-column gap-2">
+                    <div class="d-flex gap-2">
+                        <div class="bg-body-secondary rounded-5 px-2">How do i vote?</div>
+                        <div class="bg-body-secondary rounded-5 px-2">When is the next election?</div>
+                    </div>
+                    <div class="bg-body-secondary rounded-5 px-2 w-fit">Can i Change my vote?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-5">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between text-white">
+                <div class="w-50">
+                    <p class="fw-bold fs-3">VOTE-X</p>
+                    <span class="">Making democracy accessible through secure and transparent
+                        voting solutions. Our platform ensures every voice is heard
+                        and every vote counts.</span>
+                </div>
+                <div>
+                    <p class="fs-5 fw-semibold">Resources</p>
+                    <ul class="list-unstyled ">
+                        <li>Help Center</li>
+                        <li>Privacy center</li>
+                        <li>Terms of Service</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="fs-5 fw-semibold">Company</p>
+                    <ul class="list-unstyled ">
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Contact</li>
+                        <li>Partners</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./home.js"></script>
+    <script src="../bootstrapJS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

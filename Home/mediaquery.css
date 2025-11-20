@@ -1,0 +1,822 @@
+
+
+   /* Extra Small Devices (Phones, 320px - 374px) */
+@media (max-width: 374px) {
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.1rem !important;
+    }
+    
+    .navbar-nav {
+        gap: 1rem !important;
+    }
+
+    #signBtn {
+        font-size: 0.75rem !important;
+        padding: 0.4rem 1rem !important;
+        margin-top: 0.5rem;
+    }
+
+    /* Home Section */
+    .home h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .home p {
+        width: 100% !important;
+        padding-left: 0 !important;
+        font-size: 0.85rem !important;
+    }
+
+    .voteBtn, .learnBtn {
+        font-size: 0.8rem !important;
+        padding: 0.5rem 1.2rem !important;
+    }
+
+    .home .d-flex.gap-5 {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        align-items: center !important;
+    }
+
+    .home .d-flex.gap-5 span {
+        font-size: 1rem !important;
+    }
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+
+
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+            box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+        }
+        50% {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(13, 110, 253, 0.5);
+        }
+    }
+
+    /* How It Works Section */
+    .how h2 {
+        font-size: 1.2rem !important;
+    }
+
+    .how p.fs-1 {
+        font-size: 1.5rem !important;
+    }
+
+    .how p.w-50 {
+        width: 100% !important;
+        font-size: 0.9rem !important;
+    }
+
+    .item .inner {
+        padding: 1rem !important;
+    }
+
+    .item .fs-4 {
+        font-size: 1.1rem !important;
+    }
+
+    .item .fs-5 {
+        font-size: 0.85rem !important;
+    }
+
+    #how-icon {
+        font-size: 1.5rem !important;
+    }
+
+    .ico {
+        padding: 0.5rem !important;
+    }
+
+    /* Chat Modal - Fixed Bottom Right */
+    .chat-modal {
+        width: 90% !important;
+        max-width: 350px !important;
+        min-height: 500px !important;
+        max-height: 600px !important;
+        position: fixed !important;
+        bottom: 100px !important;
+        right: 20px !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        z-index: 999;
+    }
+
+    .chat-modal .fs-5 {
+        font-size: 0.9rem !important;
+    }
+
+    .message {
+        width: 70% !important;
+    }
+
+    /* Footer */
+    footer .container {
+        padding: 2rem 1rem !important;
+    }
+
+    footer .d-flex {
+        flex-direction: column !important;
+        gap: 2rem !important;
+    }
+
+    footer .w-50 {
+        width: 100% !important;
+    }
+
+    footer .fs-3 {
+        font-size: 1.5rem !important;
+    }
+
+    footer .fs-5 {
+        font-size: 1rem !important;
+    }
+}
+
+
+/* Small Devices (Phones, 375px - 424px) */
+
+@media (min-width: 375px) and (max-width: 424px) {
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.3rem !important;
+    }
+
+    #signBtn {
+        font-size: 0.85rem !important;
+        padding: 0.5rem 1.2rem !important;
+    }
+
+    /* Home Section */
+    .home h1 {
+        font-size: 2rem !important;
+    }
+
+    .home p {
+        width: 100% !important;
+        padding-left: 0 !important;
+        font-size: 0.95rem !important;
+    }
+
+    .voteBtn, .learnBtn {
+        font-size: 0.9rem !important;
+        padding: 0.6rem 1.5rem !important;
+    }
+
+    .home .d-flex.gap-5 {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 25px !important;
+        right: 25px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+
+    /* Chat Modal - Fixed Bottom Right with Animation */
+    .chat-modal {
+        width: 65% !important;
+        max-width: 600px !important;
+        min-height: 700px !important;
+        max-height: 850px !important;
+        position: fixed !important;
+        bottom: 150px !important;
+        right: 50px !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        z-index: 999;
+        animation: slideUpFromButton 0.4s ease-out;
+    }
+    
+    @keyframes slideUpFromButton {
+        0% {
+            transform: scale(0) translateY(50px);
+            opacity: 0;
+            transform-origin: bottom right;
+        }
+        60% {
+            transform: scale(1.05) translateY(-10px);
+        }
+        100% {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Footer */
+    footer .d-flex {
+        flex-direction: column !important;
+        gap: 2rem !important;
+    }
+
+    footer .w-50 {
+        width: 100% !important;
+    }
+}
+
+
+   /* Medium Phones (425px - 599px) */
+
+@media (min-width: 425px) and (max-width: 599px) {
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.4rem !important;
+    }
+
+    /* Home Section */
+    .home h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .home p {
+        width: 100% !important;
+        padding-left: 1rem !important;
+    }
+
+    .home .d-flex.gap-5 {
+        flex-wrap: wrap !important;
+        gap: 2rem !important;
+    }
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 30px !important;
+        right: 30px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+
+    .how p.w-50 {
+        width: 100% !important;
+    }
+
+    /* Chat Modal */
+    .chat-modal {
+        width: 85% !important;
+    }
+
+    /* Footer */
+    footer .d-flex {
+        flex-direction: column !important;
+        gap: 2.5rem !important;
+    }
+
+    footer .w-50 {
+        width: 100% !important;
+    }
+}
+
+/* Small Tablets (600px - 767px)*/
+@media (min-width: 600px) and (max-width: 767px) {
+    /* Navbar */
+    .navbar-nav {
+        gap: 2rem !important;
+    }
+
+    /* Home Section */
+    .home h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .home p {
+        width: 90% !important;
+        padding-left: 2rem !important;
+    }
+
+    .home .d-flex.gap-5 {
+        gap: 2.5rem !important;
+    }
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 30px !important;
+        right: 30px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+    /* How It Works */
+    .how p.fs-1 {
+        font-size: 2.2rem !important;
+    }
+
+    .how p.w-50 {
+        width: 80% !important;
+    }
+
+    /* Chat Modal */
+    .chat-modal {
+        width: 80% !important;
+    }
+
+    /* Footer */
+    footer .d-flex {
+        flex-wrap: wrap !important;
+        gap: 2rem !important;
+    }
+
+    footer .w-50 {
+        width: 100% !important;
+    }
+}
+
+/* Tablets (768px - 899px) */
+@media (min-width: 768px) and (max-width: 899px) {
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+
+    .navbar-nav {
+        gap: 2.5rem !important;
+    }
+
+    /* Home Section */
+    .home h1 {
+        font-size: 2.8rem !important;
+    }
+
+    .home p {
+        width: 85% !important;
+        padding-left: 2.5rem !important;
+    }
+
+    .voteBtn, .learnBtn {
+        padding: 0.7rem 2rem !important;
+    }
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 30px !important;
+        right: 30px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+
+    /* How It Works */
+    .how p.w-50 {
+        width: 75% !important;
+    }
+
+    .item .inner {
+        min-height: 140px;
+    }
+
+    /* Chat Modal */
+    .chat-modal {
+        width: 75% !important;
+    }
+
+    /* Footer */
+    footer .d-flex {
+        flex-wrap: wrap !important;
+    }
+
+    footer .w-50 {
+        width: 60% !important;
+    }
+}
+
+/* Large Tablets (900px - 1023px)*/
+@media (min-width: 900px) and (max-width: 1023px) {
+    /* Home Section */
+    .home h1 {
+        font-size: 3rem !important;
+    }
+
+    .home p {
+        width: 80% !important;
+    }
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 30px !important;
+        right: 30px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+    /* How It Works */
+    .how p.w-50 {
+        width: 70% !important;
+    }
+
+    /* Chat Modal */
+    .chat-modal {
+        width: 70% !important;
+    }
+
+    /* Footer */
+    footer .w-50 {
+        width: 50% !important;
+    }
+}
+
+/*Small Laptops (1024px - 1279px)*/
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /* Home Section */
+    .home h1 {
+        font-size: 3.2rem !important;
+    }
+
+    .home p {
+        width: 75% !important;
+    }
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 30px !important;
+        right: 30px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+
+
+    /* How It Works */
+    .how p.w-50 {
+        width: 60% !important;
+    }
+
+    .item .inner {
+        min-height: 150px;
+    }
+
+    /* Chat Modal */
+    .chat-modal {
+        width: 65% !important;
+    }
+}
+
+/* 
+Laptops (1280px - 1439px)
+*/
+@media (min-width: 1280px) and (max-width: 1439px) {
+    /* Home Section */
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 35px !important;
+        right: 35px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+
+
+    /* How It Works */
+    .how p.w-50 {
+        width: 55% !important;
+    }
+
+    /* Chat Modal */
+    .chat-modal {
+        width: 60% !important;
+    }
+}
+
+/* ================================
+   Desktops (1440px - 1919px)
+   ================================ */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    /* Container adjustments */
+    .container {
+        max-width: 1320px !important;
+    }
+
+    /* Home Section */
+    .home h1 {
+        font-size: 3.5rem !important;
+    }
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 40px !important;
+        right: 40px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+
+    /* How It Works */
+    .how p.w-50 {
+        width: 50% !important;
+    }
+
+    .item .inner {
+        min-height: 160px;
+    }
+
+    /* Chat Modal */
+    .chat-modal {
+        width: 55% !important;
+        min-height: 650px !important;
+    }
+}
+
+/*
+Large Desktops (1920px - 2559px)
+*/
+@media (min-width: 1920px) and (max-width: 2559px) {
+    /* Container */
+    .container {
+        max-width: 1600px !important;
+    }
+
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.8rem !important;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.3rem !important;
+    }
+
+    #signBtn {
+        font-size: 1.1rem !important;
+        padding: 0.6rem 1.8rem !important;
+    }
+
+    /* Home Section */
+    .home h1 {
+        font-size: 4rem !important;
+    }
+
+    .home p {
+        font-size: 1.3rem !important;
+    }
+
+    .voteBtn, .learnBtn {
+        font-size: 1.2rem !important;
+        padding: 0.8rem 2.5rem !important;
+    }
+
+    .home .d-flex.gap-5 span {
+        font-size: 1.5rem !important;
+    }
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 40px !important;
+        right: 40px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+
+
+    /* How It Works */
+    .how h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .how p.fs-1 {
+        font-size: 3rem !important;
+    }
+
+    .how p.w-50 {
+        width: 45% !important;
+        font-size: 1.3rem !important;
+    }
+
+    .item .fs-4 {
+        font-size: 1.6rem !important;
+    }
+
+    .item .fs-5 {
+        font-size: 1.3rem !important;
+    }
+
+    .item .inner {
+        min-height: 180px;
+    }
+
+    /* Chat Modal */
+    .chat-modal {
+        width: 50% !important;
+        min-height: 700px !important;
+    }
+
+    /* Footer */
+    footer .fs-3 {
+        font-size: 2rem !important;
+    }
+
+    footer .fs-5 {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* 4K Screens (2560px+) */
+@media (min-width: 2560px) {
+    /* Container */
+    .container {
+        max-width: 2000px !important;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 1.5rem 0 !important;
+    }
+
+    .navbar-brand {
+        font-size: 2.2rem !important;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.6rem !important;
+    }
+
+    #signBtn {
+        font-size: 1.4rem !important;
+        padding: 0.8rem 2.2rem !important;
+    }
+
+    /* Home Section */
+    .home {
+        padding-top: 8rem !important;
+    }
+
+    .home h1 {
+        font-size: 5rem !important;
+    }
+
+    .home p {
+        font-size: 1.6rem !important;
+        width: 70% !important;
+    }
+
+    .voteBtn, .learnBtn {
+        font-size: 1.5rem !important;
+        padding: 1rem 3rem !important;
+    }
+
+    .home .d-flex.gap-5 {
+        gap: 4rem !important;
+    }
+
+    .home .d-flex.gap-5 span {
+        font-size: 1.8rem !important;
+    }
+
+    /* AI Button - Fixed Bottom Right */
+    #ask {
+        position: fixed !important;
+        bottom: 50px !important;
+        right: 50px !important;
+        top: auto !important;
+        z-index: 1000;
+    }
+
+
+    /* How It Works */
+    .how {
+        padding-top: 8rem !important;
+    }
+
+    .how h2 {
+        font-size: 2.2rem !important;
+    }
+
+    .how p.fs-1 {
+        font-size: 3.5rem !important;
+    }
+
+    .how p.w-50 {
+        width: 40% !important;
+        font-size: 1.6rem !important;
+    }
+
+    .item .fs-4 {
+        font-size: 2rem !important;
+    }
+
+    .item .fs-5 {
+        font-size: 1.5rem !important;
+    }
+
+    .item .inner {
+        padding: 2rem !important;
+        min-height: 220px;
+    }
+
+    #how-icon {
+        font-size: 2.5rem !important;
+    }
+
+    .ico {
+        padding: 1.5rem !important;
+    }
+
+    /* Chat Modal */
+    .chat-modal {
+        width: 45% !important;
+        min-height: 800px !important;
+    }
+
+    .chat-modal .fs-5 {
+        font-size: 1.4rem !important;
+    }
+
+    .message p {
+        font-size: 1.2rem !important;
+    }
+
+    #chatprof {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 8rem !important;
+    }
+
+    footer .container {
+        padding: 4rem 0 !important;
+    }
+
+    footer .fs-3 {
+        font-size: 2.5rem !important;
+    }
+
+    footer .fs-5 {
+        font-size: 1.5rem !important;
+    }
+
+    footer span, footer li {
+        font-size: 1.2rem !important;
+    }
+}
+
+/*  Landscape Orientation for Mobile  */
+@media (max-height: 500px) and (orientation: landscape) {
+    .home h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .home p {
+        font-size: 0.85rem !important;
+    }
+
+    .voteBtn, .learnBtn {
+        padding: 0.4rem 1rem !important;
+        font-size: 0.85rem !important;
+    }
+
+    .home .d-flex.gap-5 {
+        gap: 1rem !important;
+    }
+
+    /* AI Button - Fixed Bottom Right - Hidden in Landscape */
+    #ask {
+        display: none !important;
+    }
+
+    .how {
+        padding-top: 2rem !important;
+    }
+
+    .item .inner {
+        min-height: auto !important;
+        padding: 0.8rem !important;
+    }
+}
+

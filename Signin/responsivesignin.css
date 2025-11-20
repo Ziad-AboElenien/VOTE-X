@@ -1,0 +1,600 @@
+
+
+
+   /* 1. LARGE SCREENS (1440px and above) */
+
+@media (min-width: 1440px) {
+    div.signin-box {
+        width: 650px;
+    }
+    
+    .welcome h1 {
+        font-size: 4rem !important;
+    }
+    
+    .welcome p {
+        font-size: 2.5rem !important;
+    }
+    
+    div.cam-box {
+        height: 450px;
+    }
+}
+
+
+   /* 2. DESKTOP & LAPTOPS (1200px - 1439px) */
+
+@media (max-width: 1439px) and (min-width: 1200px) {
+    div.signin-box {
+        width: 580px;
+    }
+    
+    .welcome {
+        width: 28% !important;
+        padding-left: 3rem !important;
+    }
+}
+
+
+   /* 3. MEDIUM LAPTOPS (992px - 1199px) */
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .welcome {
+        width: 32% !important;
+        padding-left: 2.5rem !important;
+    }
+    
+    .welcome h1 {
+        font-size: 2.8rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .welcome p {
+        font-size: 2rem !important;
+    }
+    
+    div.signin-box {
+        width: 520px;
+    }
+    
+    .position {
+        left: 45% !important;
+    }
+    
+}
+
+
+   /* 4. TABLETS LANDSCAPE (768px - 991px) */
+
+@media (max-width: 991px) and (min-width: 768px) {
+    /* Hide Welcome Section */
+    .welcome {
+        display: none !important;
+    }
+    
+    /* Center Sign-in Box */
+    .position {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 90%;
+        max-width: 500px;
+    }
+    
+    div.signin-box {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    
+    /* Text Adjustments */
+    .verification-content .fs-3 {
+        font-size: 1.6rem !important;
+    }
+    
+    .enter-id .fs-3,
+    .cam-verify .fs-4,
+    .cam-chot .fs-4 {
+        font-size: 1.4rem !important;
+    }
+    
+    div.cam-box {
+        height: 350px;
+    }
+}
+
+
+   /* 5. TABLETS PORTRAIT (576px - 767px) */
+
+@media (max-width: 767px) and (min-width: 576px) {
+    /* Remove Welcome Text */
+    .welcome {
+        display: none !important;
+    }
+    
+    /* Layout Adjustments */
+    section.sign-in {
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .position {
+        position: relative !important;
+        left: 0 !important;
+        transform: none !important;
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    
+    div.signin-box {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    /* Icon & Text Sizes */
+    .verification-content .rounded-circle {
+        width: 90px !important;
+        height: 90px !important;
+        padding: 1.8rem !important;
+    }
+    
+    .verification-content .fs-2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .verification-content .fs-3 {
+        font-size: 1.4rem !important;
+    }
+    
+    .verification-content .fs-5 {
+        font-size: 1rem !important;
+    }
+    
+    .enter-id .fs-3,
+    .cam-verify .fs-4,
+    .cam-chot .fs-4 {
+        font-size: 1.3rem !important;
+        padding-top: 2rem !important;
+    }
+    
+    /* Camera Box */
+    div.cam-box {
+        height: 280px;
+    }
+    
+    /* Buttons */
+    #continue-btn,
+    .take-photo,
+    .verify-btn,
+    .retake-btn {
+        font-size: 1rem !important;
+        padding: 0.8rem !important;
+    }
+    
+    /* Spacing */
+    .enter-id,
+    .cam-verify,
+    .cam-chot {
+        margin: 1.2rem !important;
+    }
+    
+    /* Success Screen */
+    .verf-success .fs-3 {
+        font-size: 1.5rem !important;
+    }
+    
+    .verf-success button {
+        font-size: 1.1rem !important;
+    }
+}
+
+
+   /* 6. MOBILE LARGE (480px - 575px) */
+
+@media (max-width: 575px) and (min-width: 480px) {
+    .welcome {
+        display: none !important;
+    }
+    
+    section.sign-in {
+        padding: 1rem;
+    }
+    
+    .position {
+        position: relative !important;
+        left: 0 !important;
+        transform: none !important;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    
+    div.signin-box {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        padding: 0.8rem;
+    }
+
+    /* Icon Adjustments */
+    .verification-content .rounded-circle {
+        width: 85px !important;
+        height: 85px !important;
+        padding: 1.6rem !important;
+    }
+    
+    .verification-content .fs-2 {
+        font-size: 1.6rem !important;
+    }
+    
+    /* Text Sizes */
+    .verification-content .fs-3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .verification-content .fs-5 {
+        font-size: 0.95rem !important;
+    }
+    
+    .enter-id .fs-3,
+    .cam-verify .fs-4,
+    .cam-chot .fs-4 {
+        font-size: 1.15rem !important;
+        padding-top: 1.5rem !important;
+    }
+    
+    /* Camera Box */
+    div.cam-box {
+        height: 240px;
+    }
+    
+    /* Buttons */
+    #continue-btn,
+    .take-photo,
+    .verify-btn,
+    .retake-btn {
+        font-size: 0.95rem !important;
+        padding: 0.75rem !important;
+    }
+    
+    .d-flex.gap-3 {
+        gap: 0.6rem !important;
+    }
+    
+    /* Spacing */
+    .enter-id,
+    .cam-verify,
+    .cam-chot {
+        margin: 1rem !important;
+    }
+    
+    /* Success Screen */
+    .verf-success .fs-3 {
+        font-size: 1.35rem !important;
+    }
+    
+    .verf-success button {
+        font-size: 1rem !important;
+        padding: 0.7rem 2rem !important;
+    }
+}
+
+
+   /* 7. MOBILE MEDIUM (375px - 479px) */
+
+@media (max-width: 479px) and (min-width: 375px) {
+    .welcome {
+        display: none !important;
+    }
+    
+    section.sign-in {
+        padding: 0.8rem;
+    }
+    
+    .position {
+        position: relative !important;
+        left: 0 !important;
+        transform: none !important;
+        width: 100%;
+        padding: 0.3rem;
+    }
+    
+    div.signin-box {
+        width: 100%;
+        padding: 0.7rem;
+    }
+    
+    /* Icon & Lock */
+    .verification-content .rounded-circle {
+        width: 75px !important;
+        height: 75px !important;
+        padding: 1.3rem !important;
+    }
+    
+    .verification-content .fs-2 {
+        font-size: 1.4rem !important;
+    }
+    
+    /* Headings */
+    .verification-content .fs-3 {
+        font-size: 1.15rem !important;
+        padding-top: 1rem !important;
+    }
+    
+    .verification-content .fs-5 {
+        font-size: 0.9rem !important;
+        padding-top: 1rem !important;
+    }
+    
+    .enter-id .fs-3,
+    .cam-verify .fs-4,
+    .cam-chot .fs-4 {
+        font-size: 1.05rem !important;
+        padding-top: 1.2rem !important;
+    }
+    
+    /* Input & Camera */
+    .enter-id input {
+        padding: 0.7rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    div.cam-box {
+        height: 220px;
+    }
+    
+    /* Buttons */
+    #continue-btn,
+    .take-photo,
+    .verify-btn,
+    .retake-btn {
+        font-size: 0.88rem !important;
+        padding: 0.65rem !important;
+    }
+    
+    .d-flex.gap-3 {
+        gap: 0.5rem !important;
+    }
+    
+    /* Spacing */
+    .enter-id,
+    .cam-verify,
+    .cam-chot {
+        margin: 0.8rem !important;
+    }
+    
+    .enter-id strong,
+    .cam-verify p,
+    .cam-chot p {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Success Screen */
+    .verf-success {
+        padding: 2rem 0.5rem !important;
+    }
+    
+    .verf-success .fs-3 {
+        font-size: 1.2rem !important;
+    }
+    
+    .verf-success .fs-5 {
+        font-size: 0.9rem !important;
+    }
+    
+    .verf-success button {
+        font-size: 0.95rem !important;
+        padding: 0.65rem 1.8rem !important;
+    }
+}
+
+
+   /* 8. MOBILE SMALL (320px - 374px) */
+
+@media (max-width: 374px) {
+    .welcome {
+        display: none !important;
+    }
+    
+    section.sign-in {
+        padding: 0.5rem;
+    }
+    
+    .position {
+        position: relative !important;
+        left: 0 !important;
+        transform: none !important;
+        width: 100%;
+        padding: 0.2rem;
+    }
+    
+    div.signin-box {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    
+    /* Icon & Lock */
+    .verification-content .rounded-circle {
+        width: 65px !important;
+        height: 65px !important;
+        padding: 1rem !important;
+        margin-top: 1rem !important;
+    }
+    
+    .verification-content .fs-2 {
+        font-size: 1.2rem !important;
+    }
+    
+    /* All Headings */
+    .verification-content .fs-3 {
+        font-size: 1rem !important;
+        padding-top: 0.8rem !important;
+    }
+    
+    .verification-content .fs-5 {
+        font-size: 0.82rem !important;
+        padding-top: 0.8rem !important;
+    }
+    
+    .enter-id .fs-3,
+    .cam-verify .fs-4,
+    .cam-chot .fs-4 {
+        font-size: 0.95rem !important;
+        padding-top: 1rem !important;
+    }
+    
+    /* Input Fields */
+    .enter-id strong {
+        font-size: 0.82rem !important;
+    }
+    
+    .enter-id input {
+        padding: 0.6rem !important;
+        font-size: 0.85rem !important;
+    }
+    
+    /* Camera Box */
+    div.cam-box {
+        height: 190px;
+    }
+    
+    /* All Buttons */
+    #continue-btn,
+    .take-photo {
+        font-size: 0.8rem !important;
+        padding: 0.6rem !important;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .verify-btn,
+    .retake-btn {
+        font-size: 0.75rem !important;
+        padding: 0.55rem !important;
+    }
+    
+    .d-flex.gap-3 {
+        gap: 0.4rem !important;
+        margin-top: 0.5rem !important;
+    }
+    
+    /* Icons in Buttons */
+    button i {
+        font-size: 0.8rem !important;
+    }
+    
+    /* Spacing */
+    .enter-id,
+    .cam-verify,
+    .cam-chot {
+        margin: 0.6rem !important;
+    }
+    
+    .cam-verify p,
+    .cam-chot p {
+        font-size: 0.82rem !important;
+        margin: 0.5rem !important;
+    }
+    
+    /* Back Button */
+    .backid-btn {
+        font-size: 0.85rem !important;
+    }
+    
+    /* Success Screen */
+    .verf-success {
+        padding: 1.5rem 0.3rem !important;
+    }
+    
+    .verf-success .rounded-circle {
+        margin-top: 2rem !important;
+    }
+    
+    .verf-success .fs-3 {
+        font-size: 1.05rem !important;
+    }
+    
+    .verf-success .fs-5 {
+        font-size: 0.82rem !important;
+    }
+    
+    .verf-success .w-100 {
+        margin: 2rem 0 !important;
+        padding-top: 2rem !important;
+    }
+    
+    .verf-success button {
+        font-size: 0.85rem !important;
+        padding: 0.6rem 1.5rem !important;
+    }
+}
+
+
+   /* 9. EXTRA SMALL DEVICES (below 320px) */
+
+@media (max-width: 319px) {
+    .welcome {
+        display: none !important;
+    }
+    
+    section.sign-in {
+        padding: 0.3rem;
+    }
+    
+    .position {
+        position: relative !important;
+        left: 0 !important;
+        transform: none !important;
+        width: 100%;
+        padding: 0.1rem;
+    }
+    
+    div.signin-box {
+        width: 100%;
+        padding: 0.4rem;
+    }
+
+    /* Ultra Compact Design */
+    .verification-content .rounded-circle {
+        width: 55px !important;
+        height: 55px !important;
+        padding: 0.8rem !important;
+    }
+    
+    .verification-content .fs-2 {
+        font-size: 1rem !important;
+    }
+    
+    .verification-content .fs-3 {
+        font-size: 0.9rem !important;
+    }
+    
+    .verification-content .fs-5 {
+        font-size: 0.75rem !important;
+    }
+    
+    .enter-id .fs-3,
+    .cam-verify .fs-4,
+    .cam-chot .fs-4 {
+        font-size: 0.85rem !important;
+    }
+    
+    div.cam-box {
+        height: 160px;
+    }
+    
+    #continue-btn,
+    .take-photo,
+    .verify-btn,
+    .retake-btn {
+        font-size: 0.7rem !important;
+        padding: 0.5rem !important;
+    }
+    
+    .enter-id,
+    .cam-verify,
+    .cam-chot {
+        margin: 0.4rem !important;
+    }
+}

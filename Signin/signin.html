@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vote-x</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="../Assets/all.min.css">
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="../Assets/bootstrap.min.css">
+    <!-- link css file -->
+    <link rel="stylesheet" href="./signin.css">
+    <!-- media query -->
+    <link rel="stylesheet" href="./responsivesignin.css">
+</head>
+
+<body>
+    <section class="sign-in position-relative vh-100">
+         <div class="con position-relative d-flex">
+            <div class="welcome text-light w-25 text-center pt-2 ps-5 mt-5">
+                <h1 class="x-home display-2 fw-bold pb-5 mb-5">VOTE-X</h1>
+                <p class="pt-5 display-5 fw-semibold">HELLO, <span class="d-block mt-3">WELCOME!</span></p>
+            </div>
+            <div class="position d-flex flex-column justify-content-center h-100 position-absolute start-50">
+                <div class="signin-box  rounded-5">
+                    <!-- VERFICATION CONTENT -->
+                    <div class="verification-content">
+                        <div class="d-flex flex-column bg-primary-subtle p-4 rounded-circle m-auto mt-4 w-fit">
+                            <div class="lock d-flex "><i class="fa-solid fa-lock text-primary-emphasis fs-2 "></i></div>
+                        </div>
+                        <p class="fs-3 pt-3 fw-bold text-center">Secure Sign in
+                            <span class="d-block pt-3 fw-semibold fs-5 text-white">Please verify your identify to
+                                continue</span>
+                        </p>
+                        <!-- ID NUMBER VERIFY -->
+                        <div class="enter-id d-flex flex-column my-3 mx-4">
+                            <p class="fs-3 fw-semibold pt-5">Step 1: Enter National ID</p>
+                            <strong class="text-white mb-2">National ID Number</strong>
+                            <input class="p-3 form-control rounded-3 border border-2" type="number"
+                                placeholder="Enter your National ID">
+                            <button id="continue-btn" class="my-4 h-btn p-3 btn border border-1 bg-primary text-white rounded-3">Continue
+                                to
+                                Verification <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                        <!-- CAM VERIFY -->
+                        <div class="cam-verify d-none m-5">
+                            <p class="fs-4 fw-semibold">Step 2: Camera Verification</p>
+                            <div class="cam-box w-100 bg-white rounded-4"></div>
+                            <p class="mt-3 mx-2 text-white text-center">Position your face clearly in the frame and
+                                ensure good lighting</p>
+                            <button
+                                class="mt-2 take-photo h-btn p-3 btn border border-1 bg-primary fw-semibold fs-5 text-white w-100 rounded-3"><i
+                                    class="me-2 fa-solid fa-camera"></i>Take a Photo</button>
+                        </div>
+                        <!--VERIFY OR RETAKE -->
+                        <div class="cam-chot d-none m-5">
+                            <p class="fs-4 fw-semibold">Step 2: Camera Verification</p>
+                            <p class="text-white backid-btn fw-semibold"><i class="fa-solid fa-arrow-left"></i> Back to ID entry
+                            </p>
+                            <div class="cam-box w-100 bg-black rounded-4"></div>
+                            <div class="d-flex gap-3 mt-3">
+                                <button
+                                    class="mt-2 p-3 retake-btn btn border border-1 bg-white fw-semibold fs-5 text-black flex-grow-1 rounded-3">Retake
+                                    Photo</button>
+                                <button
+                                    class="mt-2 h-btn verify-btn p-3 btn border border-1 bg-primary fw-semibold fs-5 text-white flex-grow-1 rounded-3">Verify
+                                    <i class="fa-solid fa-check ps-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VERFICATION SUCCESSFUL -->
+                    <div class="verf-success d-none py-5">
+                        <div class="d-flex flex-column bg-primary-subtle p-4 rounded-circle m-auto mt-5 w-fit">
+                            <div class="lock"><i class="fa-solid fa-user-shield text-primary-emphasis fs-2 "></i></div>
+                        </div>
+                        <p class="fs-3 pt-3 fw-bold text-center">Verification Successful
+                            <span class="d-block pt-3 fw-semibold fs-5 text-white">You are being redirected...</span>
+                        </p>
+                        <div class="w-100 my-5 pt-5 text-center"><button class="btn lets-vote bg-primary px-5 text-white h-btn rounded-pill fw-semibold fs-5 mt-5 text-center">READY TO VOTE</button></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <script src="./signin.js"></script>
+    <script src="../bootstrapJS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

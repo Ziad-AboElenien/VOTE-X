@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vote-x</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="../Assets/all.min.css">
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="../Assets/bootstrap.min.css">
+    <!-- link css file -->
+    <link rel="stylesheet" href="./elections.css">
+</head>
+
+<body>
+    <nav class="navbar shadow fixed-top bg-primary">
+        <div class="container-fluid container">
+            <p class="navbar-brand goto-home m-0 fs-4 fw-bold text-white" href="#">VOTE-X</p>
+        </div>
+    </nav>
+
+    <section class="elections pb-5 bg-body-tertiary">
+        <div class="container">
+            <div class="mt-5">
+                <h1 class="pt-5 fw-bold">Elections</h1>
+                <p class="fs-5 mt-2 text-black-50">View and participate in current and upcoming elections.</p>
+            </div>
+            <div class="allelections d-flex flex-column">
+                <div class="active-elec row row-cols-lg-2 row-cols-sm-1  my-3">
+                    <div class="item">
+                        <div class="inner">
+                            <h2 class="mt-5">Active Elections</h2>
+                            <div class="rounded-3 w-100 mt-4 elec-box shadow bg-light px-4 py-4">
+                                <div class="d-flex mb-4 justify-content-between">
+                                    <strong class="fs-4">Student Council President</strong>
+                                    <button
+                                        class="bg-success-subtle text-success btn px-3 py-1 rounded-3">Active</button>
+                                </div>
+                                <p class="text-black-50 w-75 my-3">Vote for the next student council president
+                                    who will represent student interests for the
+                                    upcoming academic year.</p>
+                                <ul class="list-unstyled my-4 text-black-50">
+                                    <li class="my-2"><i class="pe-3 fa-solid fa-calendar"></i> Start: Jun 1, 2023</li>
+                                    <li class="my-2"><i class="pe-3 fa-regular fa-clock"></i> End: Jun 7, 2023</li>
+                                    <li class="my-2"><i class="pe-3 fa-solid fa-user-group"></i> 245 votes cast</li>
+                                </ul>
+                                <div class="d-flex gap-3 mt-4">
+                                    <button class="bg-primary text-white vote-now-btn btn rounded-3 px-4 py-2">Vote Now</button>
+                                    <button class="bg-secondary-subtle btn view-candidates-btn rounded-3 px-4 py-2">View Candidates</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upcoming-elec row row-cols-lg-2 row-cols-sm-1 my-3">
+                    <div class="item">
+                        <div class="inner">
+                            <h2 class="mt-5">Upcoming Elections</h2>
+                            <div class="rounded-3 mt-4 w-100 elec-box shadow bg-light px-4 py-4">
+                                <div class="d-flex mb-4 justify-content-between">
+                                    <strong class="fs-4">City Mayor Election</strong>
+                                    <button
+                                        class="bg-primary-subtle text-primary btn px-3 py-1 rounded-3">Upcoming</button>
+                                </div>
+                                <p class="text-black-50 w-75 my-3">Choose the next mayor who will lead our
+                                    city's development and public services for
+                                    the next 4 years.</p>
+                                <ul class="list-unstyled my-4 text-black-50">
+                                    <li class="my-2"><i class="pe-3 fa-solid fa-calendar"></i> Start:Jul 15, 2023</li>
+                                    <li class="my-2"><i class="pe-3 fa-regular fa-clock"></i> End:Jul 16, 2023</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <button class="bg-secondary-subtle view-upcoming-candidates-btn btn rounded-3 px-4 py-2">View Candidates</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="past-elec row row-cols-lg-2 row-cols-sm-1 my-3">
+                    <div class="item">
+                        <div class="inner">
+                            <h2 class="mt-5">Past Elections</h2>
+                            <div class="rounded-3 w-100 mt-4 elec-box shadow bg-light px-4 py-4">
+                                <div class="d-flex mb-4 justify-content-between">
+                                    <strong class="fs-4">Community Garden Committee</strong>
+                                    <button class="bg-danger-subtle  btn px-3 py-1 rounded-3">Ended</button>
+                                </div>
+                                <p class="text-black-50 w-75 my-3">Select members who will oversee the community garden
+                                    project
+                                    and organize related activities.</p>
+                                <ul class="list-unstyled my-4 text-black-50">
+                                    <li class="my-2"><i class="pe-3 fa-solid fa-calendar"></i>Start: May 1, 2023</li>
+                                    <li class="my-2"><i class="pe-3 fa-regular fa-clock"></i>End: May 15, 2023</li>
+                                    <li class="my-2"><i class="pe-3 fa-solid fa-user-group"></i>189 votes cast</li>
+                                </ul>
+                                <div class="d-flex gap-3 mt-4">
+                                    <button class="bg-secondary-subtle past-view-candidate-btn btn rounded-3 px-4 py-2">View Candidates</button>
+                                    <button class="bg-secondary-subtle past-view-results-btn btn rounded-3 px-4 py-2">Vote Results</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="">
+        <div class="container py-4  text-white-50">
+            <div class="d-flex">
+                <div class="w-50">
+                    <p class="fw-bold fs-3 text-white"><i class="fa-solid fa-laptop-code"></i> VOTE-X</p>
+                    <span class="">Secure and transparent voting platform</span>
+                </div>
+                <div>
+                    <ul class="list-unstyled d-flex mt-4 gap-5 ">
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4 text-center w-100">
+                <p class="">© 2025 VOTE-X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./elections.js"></script>
+    <script src="../bootstrapJS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

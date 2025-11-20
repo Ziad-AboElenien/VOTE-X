@@ -1,0 +1,48 @@
+.w-fit
+{
+    width: fit-content;
+}
+
+.elec-box
+{
+    width: 40%;
+}
+
+footer
+{
+    background-color: #1F2937;
+
+}
+
+.fs-14
+{
+    font-size: 14px;
+}
+
+.cir-num{
+    width: 35px;
+    height: 35px;
+}
+
+div.pers
+{
+    width: 70px;
+    height: 70px;
+}
+
+
+/* div.inner-hov
+{
+    transition: all .6s;
+}
+div.inner-hov:hover
+{
+    transform: scale(1.4) translate(0,-20%);
+    
+} */
+
+.active
+{
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.25) !important;
+    border: 2px solid rgba(0, 102, 255, 0.25) ;
+}
