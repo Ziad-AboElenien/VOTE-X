@@ -13,7 +13,7 @@ const pastViewResult=document.querySelector('.past-view-results-btn')
 window.addEventListener('click' , function(e){
     if(e.target == goToHome)
     {
-        window.location.href='../Home/index.html'
+        window.location.href='../index.html'
     }
     else if(e.target == voteNowBtn) this.window.location.href='../Voting/vote.html'
     else if(e.target == viewCandidatesBtn) this.window.location.href='../Voting/vote.html'

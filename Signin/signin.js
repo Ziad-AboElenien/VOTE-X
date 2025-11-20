@@ -13,7 +13,7 @@ const successBox=document.querySelector('.verf-success')
 const letGoToVote=document.querySelector('.lets-vote')
 
 
-xHome.addEventListener('click',function(){window.location.href='../Home/index.html'})
+xHome.addEventListener('click',function(){window.location.href='../index.html'})
 
 continueBtn.addEventListener('click' ,function(){
     enterId.classList.toggle("d-none")
